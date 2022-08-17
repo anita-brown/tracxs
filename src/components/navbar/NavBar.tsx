@@ -1,47 +1,66 @@
 import React from 'react'
 import styles from './Navbar.module.scss'
+import { BiHome, BiHeart, BiBarChartAlt2 } from "react-icons/bi";
+import { BsTag, BsListTask, BsPencil } from "react-icons/bs";
+import { IoRocketOutline } from "react-icons/io5";
+import { RiFile4Line } from "react-icons/ri";
+
+import { MdOutlineEventAvailable, MdOutlineEmail } from "react-icons/md";
+
 
 const NavBar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
-        <i></i>
+        <i>
+          <BiHome />
+        </i>
         <span>Home</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
-        <span>Rates and Availability</span>
+        <i>
+          <MdOutlineEventAvailable />
+        </i>
+        <span>Rates & Availability</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i>
+          <BsTag />
+        </i>
         <span>Promotions</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i>
+          <BsListTask />
+        </i>
         <span>Reservations</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i>
+          <BsPencil />
+        </i>
         <span>Property</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i>
+          <IoRocketOutline />
+        </i>
         <span>Opportunities</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i><MdOutlineEmail/></i>
         <span>Inbox</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i><BiHeart/></i>
         <span>Guest reviews</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i><RiFile4Line/></i>
         <span>Finance</span>
       </div>
       <div className={styles.nav}>
-        <i></i>
+        <i><BiBarChartAlt2/></i>
         <span>Analytics</span>
       </div>
     </div>

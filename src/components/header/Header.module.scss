@@ -1,9 +1,9 @@
 .container {
     display: flex;
     justify-content: space-between;
-    // color: #fff;
-    color: #333;
-    font-size: 1.4rem;
+    color: #fff;
+    // color: #333;
+    font-size: 1.3rem;
     .leftHeader {
         display: flex;
         align-items: center;
@@ -38,12 +38,12 @@
                 outline: none;
                 cursor: pointer;
                 &::placeholder{
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     
                 }
             }
             i {
-                font-size: 1.9rem;
+                font-size: 1.6rem;
             }
             // width: 5rem;
         }
@@ -55,7 +55,7 @@
             // color: #fff;
             // gap: 0.5rem;
             i {
-                font-size: 2.3rem;
+                font-size: 1.9rem;
                 // color: #000;
                 
             }
