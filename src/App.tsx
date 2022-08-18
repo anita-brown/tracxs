@@ -1,11 +1,14 @@
-import styles from './App.module.scss';
-import NavSection from './views/navSection/NavSection';
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes";
 
 function App() {
   return (
-    <div className={styles.app}>
-      <NavSection/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes/>
+      </BrowserRouter>
+   
+    </>
   );
 }
 

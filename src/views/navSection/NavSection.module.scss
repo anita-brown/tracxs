@@ -1,11 +1,12 @@
 .hero {
     width: 100%;
-    background-color: rgba(91, 80, 69, 0.901);
+    background-color: #2b2d42;
     // background-color: rgb(221, 137, 18);
     height: 15vh;
     padding: 1.2rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
   
 }

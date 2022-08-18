@@ -1,0 +1,31 @@
+// import 'react-datepicker/dist/react-datepicker.scss'
+.date {
+    display: flex;
+    gap: 1rem;
+
+}
+.cal {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   p {
+       font-size: 1.2rem;
+   }
+}
+.datepicker {
+    //  text-align: center;
+     outline: none;
+    //  width: 10rem;
+     padding: 0.6rem 1rem;
+     border-radius: 3px;
+     border:0.5px solid #333;
+     cursor: pointer;
+     
+    // margin-left: 6px;
+    // font-size: 1em;
+    // color: #32e0c4;
+    // cursor: pointer; 
+    &:hover {
+        border: 1.5px solid #2b2d42;
+    }
+}
