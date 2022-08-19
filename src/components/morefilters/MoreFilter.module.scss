@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    // background-color: aquamarine;
+    gap: 1.5rem;
+    // align-items: center;
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+    height: 18vh;
+    background-color: #fff;
+ box-shadow: 10px 10px 100px #00000033;
+    // justify-content: center;
+@media (max-width: 1200px) {
+    font-size: 1rem;
+    padding: 1rem;
+}
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    input {
+        padding: 0.4rem 0.8rem;
+        border-radius: 3px;
+        border: 1.5px solid #00000033;
+        outline: none;
+        cursor: pointer;
+
+        &::placeholder {
+            color: #00000033;
+            font-size: 1.2rem;
+        }
+
+
+        &:hover {
+            border-color: #333;
+        }
+    }
+}

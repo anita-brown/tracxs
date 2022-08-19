@@ -1,8 +1,13 @@
+.wrapper {
+    height: 90vh;
+      overflow-y: scroll;
+
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 23rem;
+  padding: 3rem 23rem;
   gap: 1.5rem;
 }
 .reservedCont {
@@ -13,20 +18,23 @@
   .date {
       
       background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    label {
-      font-size: 1.3rem;
-    }
-
-    select {
-      padding: 0.4rem 3rem;
-      outline: none;
-      //  background-color: #fff;
-      //  option {
-      //      color: #fff;
-      //  }
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      label {
+          font-size: 1.3rem;
+        }
+        
+        select {
+            padding: 0.4rem 3rem;
+            outline: none;
+            //  background-color: #fff;
+            //  option {
+                //      color: #fff;
+                //  }
+                @media (max-width: 1200px) {
+                    padding: 0.4rem 2rem;
+                }
     }
   }
   .select {
@@ -37,6 +45,9 @@
     border: 1px solid blueviolet;
     font-weight: 550;
     border-radius: 3px;
+       @media (max-width: 1200px) {
+                    padding: 0.4rem 2rem;
+                }
     &:hover {
       color: blueviolet;
       background-color: #fff;
@@ -44,6 +55,13 @@
       //   background-color: rgba(83, 36, 127, 0.894);
       transition: all 0.3s ease-in-out;
     }
+
+      @media (max-width: 1200px) {
+          font-size: 1.2rem;
+        //   width: 9rem;
+        //   padding: 0 5rem;
+      }
+      
   }
   .show {
     padding: 0 2rem;
@@ -58,5 +76,10 @@
       background-color: rgba(83, 36, 127, 0.894);
       transition: all 0.5s ease-in-out;
     }
+      @media (max-width: 1200px) {
+          font-size: 1.2rem;
+        //   padding: 0 5rem;
+      }
   }
+}
 }

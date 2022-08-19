@@ -28,4 +28,7 @@
     &:hover {
         border: 1.5px solid #2b2d42;
     }
+    @media (max-width: 1200px) {
+        padding: 0.6rem 0.6rem;
+    }
 }

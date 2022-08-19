@@ -29,7 +29,7 @@ export const column = [
     },
     {
         Header: 'Price',
-        accessor: 'price'
+        accessor:'price'
     },
     {
         Header: 'Commission',

@@ -7,6 +7,9 @@ background-color: #fff;
  box-shadow: 10px 10px 100px #00000033;
  
   width: 100%;
+  @media (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
 }
 
 table td, table th {
