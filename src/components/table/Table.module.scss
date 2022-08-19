@@ -1,34 +1,33 @@
 .table {
-  // border: 2px solid #ddd;
   border-radius: 0.5rem;
   font-size: 1.3rem;
-//    text-align: center;
-background-color: #fff;
- box-shadow: 10px 10px 100px #00000033;
- 
+  background-color: #fff;
+  box-shadow: 10px 10px 100px #00000033;
+
   width: 100%;
   @media (max-width: 1200px) {
     font-size: 1.2rem;
   }
 }
 
-table td, table th {
+table td,
+table th {
   border-bottom: 1px solid #ddd;
-//   padding: 8px;
-//  text-align: center;
-
 }
 tbody {
-    text-align: center;
+  text-align: center;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-table tr:hover {background-color: #ddd;}
+table tr:hover {
+  background-color: #ddd;
+}
 
 table th {
   padding-top: 12px;
   padding-bottom: 12px;
-//   text-align: center;
   color: black;
 }

@@ -19,41 +19,13 @@ const Table = () => {
     }),
     []
   );
-  // const initialState = useMemo(()=> state, [])
-  //  const {
-  //    getTableProps,
-  //    getTableBodyProps,
-  //    headerGroups,
-  //    prepareRow,
-  //    rows,
-  //    canPreviousPage,
-  //    canNextPage,
-  //    pageOptions,
-  //    nextPage,
-  //    previousPage,
-  //    setGlobalFilter,
-  //    preGlobalFilteredRows,
-  //    setFilter,
-  // //    dispatch,
-  //    state: { pageIndex, pageSize },
-  //  } = useTable(
-  //    {
-  //      columns,
-  //      data,
-  //      initialState: { pageIndex: 0, pageSize: 5 },
-  //      filterTypes,
-  //    },
-  //    useFilters,
-  // //    useGlobalFilter,
-  //    usePagination
-  //  );
+
 
   const tableInstance: any = useTable(
     {
       columns,
       data,
-        // initialState:{ pageIndex: 0 , pageSize: 5 },
-    //   filterTypes
+  
     },
     useFilters,
     usePagination

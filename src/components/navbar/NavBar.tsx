@@ -1,25 +1,22 @@
-import React, { useState, useEffect } from "react";
-import styles from './Navbar.module.scss'
+import React, { useState } from "react";
+import styles from "./Navbar.module.scss";
 import { BiHome, BiHeart, BiBarChartAlt2 } from "react-icons/bi";
 import { BsTag, BsListTask, BsPencil } from "react-icons/bs";
-import { IoRocketOutline} from "react-icons/io5";
+import { IoRocketOutline } from "react-icons/io5";
 import { RiFile4Line } from "react-icons/ri";
 import { IoMdMenu, IoMdCloseCircleOutline } from "react-icons/io";
 import { MdOutlineEventAvailable, MdOutlineEmail } from "react-icons/md";
-import { Link } from 'react-router-dom';
-import { CSSTransition } from "react-transition-group";
-import { appRoutePath } from '../../models/routes';
+import { Link } from "react-router-dom";
+import { appRoutePath } from "../../models/routes";
 
 const NavBar = () => {
-    const [isNavVisible, setNavVisibility] = useState(false);
+  const [isNavVisible, setNavVisibility] = useState(false);
   const toggleNav = () => {
     setNavVisibility(!isNavVisible);
   };
 
-
   return (
     <div className={styles.container}>
- 
       <Link to={appRoutePath.home} className={`${styles.nav} + ${styles.open}`}>
         <i>
           <BiHome />
@@ -83,8 +80,8 @@ const NavBar = () => {
       <button onClick={toggleNav} className={styles.menu}>
         <IoMdMenu />
       </button>
-    </div >
+    </div>
   );
-}
+};
 
-export default NavBar
+export default NavBar;

@@ -1,7 +1,6 @@
-import React, { useState, forwardRef, createRef } from "react";
+import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FiCalendar } from "react-icons/fi";
 import styles from "./DatePicker.module.scss";
 
 const DatePickerCalendar = () => {
@@ -23,19 +22,18 @@ const DatePickerCalendar = () => {
 
 export default DatePickerCalendar;
 
-// const DatePickerCustomInput = forwardRef(({ onClick }: any, ref) => (
-//   <div className="calendar_icon">
-//     <FiCalendar onClick={onClick} />
-//   </div>
-// ));
-// const ref = createRef();
 
-// const DatePickerCalendar = (props: { date: Date | null | undefined; handleDateChange: (date: Date | null, event: React.SyntheticEvent<any, Event> | undefined) => void; }) => {
-//   return (
-//     <div className={styles.datepicker}>
-//       <DatePicker selected={props.date} onChange={props.handleDateChange} customInput={<DatePickerCustomInput ref={ref} />} dateFormat="yyyy/MM/dd" />
-//     </div>
-//   );
-// };
 
-// export default DatePickerCalendar;
+export const DatePickerRange = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
+  const onChange = (dates: [any, any]) => {
+    const [start, end] = dates;
+    setStartDate(start);
+    setEndDate(end);
+  };
+  return <DatePicker className={styles.daterange} selected={startDate} onChange={onChange} startDate={startDate} endDate={endDate} selectsRange dateFormat="d MMM yyyy" />;
+}
+
+
+

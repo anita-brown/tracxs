@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from "./MoreFilter.module.scss"
+import React from "react";
+import styles from "./MoreFilter.module.scss";
 const MoreFilter = () => {
   return (
     <div className={styles.wrapper}>
@@ -43,15 +43,15 @@ const MoreFilter = () => {
           <input type="checkbox" name="" id="" />
           <label htmlFor="">Pending</label>
         </div>
-          </div>
-          <div className={styles.cont}>
-              <h4>Keywords</h4>
-              <div className={styles.input}>
-                  <input type="text" placeholder='Keywords(optional)' />
-              </div>
-          </div>
+      </div>
+      <div className={styles.cont}>
+        <h4>Keywords</h4>
+        <div className={styles.input}>
+          <input type="text" placeholder="Keywords(optional)" />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default MoreFilter;

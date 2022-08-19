@@ -1,85 +1,71 @@
 .wrapper {
-    height: 90vh;
-      overflow-y: scroll;
+  height: 90vh;
+  overflow-y: scroll;
 
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 3rem 23rem;
-  gap: 1.5rem;
-}
-.reservedCont {
-  display: flex;
-  // justify-content: space-between;
-  gap: 1rem;
-  //    flex-direction: ;
-  .date {
-      
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 23rem;
+    gap: 1.5rem;
+  }
+  .reservedCont {
+    display: flex;
+    gap: 1rem;
+    .date {
       background-color: #fff;
       display: flex;
       flex-direction: column;
       gap: 0.6rem;
       label {
-          font-size: 1.3rem;
+        font-size: 1.3rem;
+      }
+
+      select {
+        padding: 0.4rem 3rem;
+        outline: none;
+        @media (max-width: 1200px) {
+          padding: 0.4rem 2rem;
         }
-        
-        select {
-            padding: 0.4rem 3rem;
-            outline: none;
-            //  background-color: #fff;
-            //  option {
-                //      color: #fff;
-                //  }
-                @media (max-width: 1200px) {
-                    padding: 0.4rem 2rem;
-                }
+      }
     }
-  }
-  .select {
-    padding: 0.4rem 3rem;
+    .select {
+      padding: 0.4rem 3rem;
 
-    margin-top: 2rem;
-    color: rgba(83, 36, 127, 0.894);
-    border: 1px solid blueviolet;
-    font-weight: 550;
-    border-radius: 3px;
-       @media (max-width: 1200px) {
-                    padding: 0.4rem 2rem;
-                }
-    &:hover {
-      color: blueviolet;
-      background-color: #fff;
-      //  border: none;
-      //   background-color: rgba(83, 36, 127, 0.894);
-      transition: all 0.3s ease-in-out;
-    }
+      margin-top: 2rem;
+      color: rgba(83, 36, 127, 0.894);
+      border: 1px solid blueviolet;
+      font-weight: 550;
+      border-radius: 3px;
+      @media (max-width: 1200px) {
+        padding: 0.4rem 2rem;
+      }
+      &:hover {
+        color: blueviolet;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+      }
 
       @media (max-width: 1200px) {
-          font-size: 1.2rem;
-        //   width: 9rem;
-        //   padding: 0 5rem;
+        font-size: 1.2rem;
       }
-      
-  }
-  .show {
-    padding: 0 2rem;
-    margin-top: 2rem;
-    border-radius: 3px;
-    border: none;
-    background-color: blueviolet;
-    color: #fff;
-    font-weight: 600;
-    &:hover {
+    }
+    .show {
+      padding: 0 2rem;
+      margin-top: 2rem;
+      border-radius: 3px;
       border: none;
-      background-color: rgba(83, 36, 127, 0.894);
-      transition: all 0.5s ease-in-out;
-    }
-      @media (max-width: 1200px) {
-          font-size: 1.2rem;
-        //   padding: 0 5rem;
+      background-color: blueviolet;
+      color: #fff;
+      font-weight: 600;
+      &:hover {
+        border: none;
+        background-color: rgba(83, 36, 127, 0.894);
+        transition: all 0.5s ease-in-out;
       }
+      @media (max-width: 1200px) {
+        font-size: 1.2rem;
+      }
+    }
   }
-}
 }
