@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Reservation.module.scss";
 import Table from "../table/Table";
 import DatePickerCalendar from "../datepicker/DatePickerCalendar";
+import MoreFilter from "../morefilters/MoreFilter";
 const Reservation = () => {
   return (
     <div className={styles.container}>
@@ -23,6 +24,7 @@ const Reservation = () => {
 
         <button className={styles.show}>Show</button>
       </div>
+      <MoreFilter />
 
       <Table />
     </div>

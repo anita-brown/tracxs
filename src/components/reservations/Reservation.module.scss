@@ -11,6 +11,8 @@
   gap: 1rem;
   //    flex-direction: ;
   .date {
+      
+      background-color: #fff;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -29,34 +31,32 @@
   }
   .select {
     padding: 0.4rem 3rem;
+
     margin-top: 2rem;
     color: rgba(83, 36, 127, 0.894);
     border: 1px solid blueviolet;
     font-weight: 550;
     border-radius: 3px;
     &:hover {
-        color: blueviolet;
-        background-color: #fff;
-        //  border: none;
-        //   background-color: rgba(83, 36, 127, 0.894);
-              transition: all .3s ease-in-out;
-
-     }
-
+      color: blueviolet;
+      background-color: #fff;
+      //  border: none;
+      //   background-color: rgba(83, 36, 127, 0.894);
+      transition: all 0.3s ease-in-out;
+    }
   }
   .show {
     padding: 0 2rem;
-     margin-top: 2rem;
-     border-radius: 3px;
-     border: none;
-     background-color: blueviolet;
-     color: #fff;
-     font-weight: 600;
-     &:hover {
-         border: none;
-          background-color: rgba(83, 36, 127, 0.894);
-              transition: all .5s ease-in-out;
-
-     }
+    margin-top: 2rem;
+    border-radius: 3px;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: 600;
+    &:hover {
+      border: none;
+      background-color: rgba(83, 36, 127, 0.894);
+      transition: all 0.5s ease-in-out;
+    }
   }
 }

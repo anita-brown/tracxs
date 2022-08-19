@@ -1,21 +1,21 @@
 import React from "react";
-import styles from './TablePagination.module.scss'
+import styles from "./TablePagination.module.scss";
 
 const TablePagination = (props: any) => {
   return (
-    <div className={styles.TablePagination}>
-      <div className="table-pagesIndexing">
-        {props.pageIndex + 1} out of {props.pageOptions.length}
-      </div>
-      <div className="navigationButtonsContainer">
+    <div className={styles.tablePagination}>
+      <div className={styles.navigationButtonsContainer}>
         <button onClick={props.previousPage} disabled={!props.canPreviousPage}>
           {" "}
-          Previous
+          Back
         </button>
-
+        <p>Page {props.pageIndex + 1} </p>
         <button onClick={props.nextPage} disabled={!props.canNextPage}>
           Next
         </button>
+      </div>
+      <div>
+      Show  {props.pageIndex + 1} of {props.pageOptions.length}
       </div>
     </div>
   );
