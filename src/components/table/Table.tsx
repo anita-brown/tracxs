@@ -23,7 +23,7 @@ const Table = ({ column, data }: any) => {
     pageOptions,
     nextPage,
     previousPage,
-    state: { pageIndex, pageSize, globalFilter },
+    state: { pageIndex },
   } = tableInstance;
   return (
     <div>
