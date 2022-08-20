@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Navbar.module.scss";
 import { BiHome, BiHeart, BiBarChartAlt2 } from "react-icons/bi";
 import { BsTag, BsListTask, BsPencil } from "react-icons/bs";
 import { IoRocketOutline } from "react-icons/io5";
 import { RiFile4Line } from "react-icons/ri";
-import { IoMdMenu, IoMdCloseCircleOutline } from "react-icons/io";
 import { MdOutlineEventAvailable, MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { appRoutePath } from "../../models/routes";
 
 const NavBar = () => {
-  const [isNavVisible, setNavVisibility] = useState(false);
-  const toggleNav = () => {
-    setNavVisibility(!isNavVisible);
-  };
-
   return (
     <div className={styles.container}>
       <Link to={appRoutePath.home} className={`${styles.nav} + ${styles.open}`}>
@@ -23,7 +17,7 @@ const NavBar = () => {
         </i>
         <span>Home</span>
       </Link>
-      <Link to={appRoutePath.availability} className={`${styles.nav} + ${styles.open}`}>
+      <Link to={appRoutePath.availability} className={styles.nav}>
         <i>
           <MdOutlineEventAvailable />
         </i>
@@ -35,7 +29,7 @@ const NavBar = () => {
         </i>
         <span>Promotions</span>
       </Link>
-      <Link to={appRoutePath.reservations} onClick={toggleNav} className={`${styles.nav} + ${styles.open}`}>
+      <Link to={appRoutePath.reservations} className={styles.nav}>
         <i>
           <BsListTask />
         </i>
@@ -77,9 +71,6 @@ const NavBar = () => {
         </i>
         <span>Analytics</span>
       </Link>
-      <button onClick={toggleNav} className={styles.menu}>
-        <IoMdMenu />
-      </button>
     </div>
   );
 };

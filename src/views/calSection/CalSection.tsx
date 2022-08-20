@@ -1,12 +1,12 @@
-import React from 'react'
-import Availability from '../../components/rate_availability/Availability'
+import React from "react";
+import Availability from "../../components/rate_availability/Availability";
 
 const CalSection = () => {
   return (
     <div>
-      <Availability/>
+      <Availability />
     </div>
-  )
-}
+  );
+};
 
-export default CalSection
+export default CalSection;

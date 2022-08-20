@@ -28,7 +28,6 @@ const Calendar = () => {
       <div className={styles.column}>
         <div>
           <DatePickerRange />
-          {/* <DateCalendar/> */}
         </div>
         <div className={styles.box}>
           <input type="checkbox" />

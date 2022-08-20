@@ -1,13 +1,13 @@
-import React from 'react'
-import Calendar from './calendar/Calendar'
-import styles from './calendar/Calendar.module.scss'
+import React from "react";
+import Calendar from "./calendar/Calendar";
+import styles from "./calendar/Calendar.module.scss";
 
 const Availability = () => {
   return (
     <div className={styles.availability}>
-<Calendar/>
+      <Calendar />
     </div>
-  )
-}
+  );
+};
 
-export default Availability
+export default Availability;

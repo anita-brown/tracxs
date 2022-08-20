@@ -10,10 +10,17 @@
     display: flex;
     align-items: center;
     gap: 1.4rem;
+
+    @media (min-width: 320px) {
+      font-size: 0.9rem;
+    }
     h1 {
       border-right: 1.2px solid white;
       padding-right: 1.4rem;
       color: #fcfcfc;
+      @media (min-width: 320px) {
+        font-size: 1.8rem;
+      }
       span {
         color: white;
       }
@@ -22,6 +29,9 @@
   .rightHeader {
     display: flex;
     gap: 2rem;
+    @media (max-width: 950px) {
+      display: none;
+    }
     .input {
       padding: 0 0.8rem;
       border-radius: 0.3rem;

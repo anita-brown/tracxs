@@ -13,9 +13,13 @@
     font-size: 1.1rem;
   }
   @media (max-width: 950px) {
-    bottom: auto;
+    font-size: 1.3rem;
   }
-
+  @media (max-width: 700px) {
+    padding: 0 1rem;
+    gap: 0;
+    font-size: 0.9rem;
+  }
   .footerHead {
     display: flex;
     justify-content: space-around;
@@ -29,6 +33,9 @@
       padding: 1rem 2rem;
       border-radius: 0.5rem;
       color: #fff;
+      @media (max-width: 600px) {
+        padding: 0.8rem 1rem;
+      }
       &:hover {
         background-color: rgba(137, 43, 226, 0.396);
         transition: all 0.8s ease-in-out;
@@ -49,6 +56,10 @@
       outline: none;
       cursor: pointer;
       text-align: right;
+      @media (min-width: 320px) {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+      }
     }
   }
 }

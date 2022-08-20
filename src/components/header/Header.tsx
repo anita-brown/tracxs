@@ -7,9 +7,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftHeader}>
-        <h1>
-          Booking.<span>com</span>
-        </h1>
+        <h1>Booking.com</h1>
         <span>Argakhanchi Hotel - 8706497</span>
       </div>
 
@@ -22,7 +20,6 @@ const Header = () => {
         </div>
 
         <div className={styles.profile}>
-          {/* <img src="" alt="" /> */}
           <i>
             <CgProfile />
           </i>

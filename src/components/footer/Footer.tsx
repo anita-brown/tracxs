@@ -15,11 +15,10 @@ const Footer = () => {
 
       <div className={styles.footerBottom}>
         <div className={styles.content}>
-
-        <p>&copy; Copyright Booking.com</p>
-        <p> 2022</p>
+          <p>&copy; Copyright Booking.com</p>
+          <p> 2022</p>
         </div>
-        <select  name="" id="">
+        <select name="" id="">
           <option value="">English</option>
         </select>
       </div>

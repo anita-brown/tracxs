@@ -3,7 +3,7 @@
   gap: 1.5rem;
   padding: 2rem 3rem;
   font-size: 1.2rem;
-  height: 18vh;
+  min-height: 220px;
   background-color: #fff;
   box-shadow: 10px 10px 100px #00000033;
   @media (max-width: 1200px) {
@@ -12,6 +12,7 @@
   }
   .box {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
   }
@@ -36,4 +37,7 @@
       border-color: #333;
     }
   }
+}
+.box label {
+  margin-top: 10px;
 }

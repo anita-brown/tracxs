@@ -1,31 +1,13 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styles from "./Table.module.scss";
 import TablePagination from "./pagination/TablePagination";
 import { useTable, usePagination, useFilters } from "react-table";
-import mock from "../../mock.json";
-import { column } from "./column";
-import Filter from "../filter/Filter";
 
-const Table = () => {
-  const columns: any = useMemo(() => column, []);
-  const data = useMemo(() => mock, []);
-  const filterTypes: any = useMemo(
-    () => ({
-      dateFilter: (rows: any[], id: any, filterValue: any) => {
-        return (rows = rows.filter((row) => {
-          return new Date(row.values.date) >= filterValue[0] && new Date(row.values.date) <= filterValue[1];
-        }));
-      },
-    }),
-    []
-  );
-
-
+const Table = ({ column, data }: any) => {
   const tableInstance: any = useTable(
     {
-      columns,
+      columns: column,
       data,
-  
     },
     useFilters,
     usePagination
@@ -41,17 +23,10 @@ const Table = () => {
     pageOptions,
     nextPage,
     previousPage,
-
-    setGlobalFilter,
-    // preGlobalFilteredRows,
     state: { pageIndex, pageSize, globalFilter },
-    setFilter,
-    dispatch,
   } = tableInstance;
   return (
     <div>
-          {/* <Filter setFilter={setFilter} 
-              globalFilter={globalFilter} setGlobalFilter={setGlobalFilter} dispatch={dispatch} /> */}
       <table className={styles.table} {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup: any) => (
